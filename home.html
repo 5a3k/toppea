@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>PeaPattern's World | Home</title>
+    <style>
+		* {
+			font-family: "Montserrat", sans-serif;
+		}
+
+		body, ul {
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+		
+		body {
+			min-height: 100vh;
+			background: linear-gradient(0deg, #000 0%, #333 100%);
+			overflow-x: hidden;
+		}
+
+		header {
+			color: #fff;
+			padding: 20px 0;
+		}
+
+		nav ul {
+			list-style: none;
+			text-align: center;
+		}
+
+		nav li {
+			display: inline;
+			margin-right: 50px;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			transition: color 0.2s ease;
+		}
+
+		nav a span {
+			display: inline-block;
+			transition: transform 0.2s ease;
+			transform-origin: center;
+		}
+
+		nav a:hover {
+			cursor: pointer;
+			color: #bbb;
+		}
+		
+		.selected {
+			color: #bbb;
+		}
+
+		nav a:hover span {
+			transform: scale(1.25);
+		}
+		
+		nav h1 {
+			font-size: 35px;
+		}
+		
+		.holder {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+		
+		.info {
+			margin: 50px;
+			max-width: 50%;
+		}
+		
+		.leslie {
+			box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+			margin: 50px;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+			transform-origin: center;
+			border-radius: 15px;
+		}
+
+		.leslie:hover {
+			box-shadow: 0 0 25px rgba(220, 220, 220, 1);
+			cursor: pointer;
+			transform: scale(1.1);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+	</style>
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><h1>PeaPattern's World 🌎</h1></li>
+					<li><a class="selected" href="home.html"><span>Home</span></a></li>
+					<li><a href="videos.html"><span>Videos</span></a></li>
+					<li><a href="leaks.html"><span>Leaks</span></a></li>
+					<li><a href="contact.html"><span>Contact</span></a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+	<main>
+		<div class="holder">
+			<h2 class="info">hi chat, welcome 2 my website. We have many big money things here i promise u. made by joseph dupre. check out home for this boring shiz, video for my videos i make that are very funny. Leaks will hack everyone lightwork. contact for talking 2 me. anyways there is nothing to see here instead click the other shiz at the top.</p>
+			<img class="leslie" src="img/Leslie Long.jpg"></img>
+		</div>
+	</main>
+	<script>
+		const leslie = document.getElementsByClassName("leslie")[0];
+		
+		leslie.addEventListener("click", function() {
+			window.open("img/Leslie Long.jpg");
+		});
+	</script>
+</html>

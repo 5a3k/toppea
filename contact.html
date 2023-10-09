@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>PeaPattern's World | Contact</title>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body, ul {
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+		
+		body {
+			min-height: 100vh;
+			background: linear-gradient(0deg, #000 0%, #333 100%);
+			overflow-x: hidden;
+		}
+
+		header {
+			color: #fff;
+			padding: 20px 0;
+		}
+
+		nav ul {
+			list-style: none;
+			text-align: center;
+		}
+
+        nav li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.2s ease;
+        }
+
+        nav a span {
+            display: inline-block;
+            transition: transform 0.2s ease;
+            transform-origin: center;
+        }
+
+        nav a:hover {
+            cursor: pointer;
+            color: #bbb;
+        }
+		
+		.selected {
+			color: #bbb;
+		}
+
+        nav a:hover span {
+            transform: scale(1.25);
+        }
+
+        nav h1 {
+            font-size: 35px;
+        }
+
+        .socials {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .socials li {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+			transition: transform 0.2s ease;
+            transform-origin: center;
+        }
+		
+		.socials li:hover {
+			transform: scale(1.25);
+		}
+
+        .socials span {
+            color: white;
+            transition: color 0.2s ease;
+        }
+
+        .socials a {
+            text-decoration: none;
+            transition: color 0.2s ease;
+            padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+        }
+
+        .discord:hover span {
+            color: rgb(95, 157, 245);
+        }
+
+        .snapchat:hover span {
+            color: yellow;
+        }
+
+        .youtube:hover span {
+            color: red;
+        }
+		
+		.socials a img {
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+    </style>
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><h1>PeaPattern's World 🌎</h1></li>
+					<li><a href="home.html"><span>Home</span></a></li>
+					<li><a href="videos.html"><span>Videos</span></a></li>
+					<li><a href="leaks.html"><span>Leaks</span></a></li>
+					<li><a class="selected" href="contact.html"><span>Contact</span></a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+	<main>
+		<div class="socials">
+			<ul>
+				<li>
+					<a class="discord" href="https://discord.com/channels/@me" target="_blank">
+						<img src="img/discord.png" alt="Discord Logo">
+						<span>Discord: @PeaPattern</span>
+					</a>
+				</li>
+				<li>
+					<a class="snapchat" href="https://web.snapchat.com/" target="_blank">
+						<img src="img/snapchat.png" alt="Snapchat Logo">
+						<span>Snapchat: @joebiden21135</span>
+					</a>
+				</li>
+				<li>
+					<a class="youtube" href="https://www.youtube.com/@AfraidOfTheBigBlack" target="_blank">
+						<img src="img/youtube.png" alt="YouTube Logo">
+						<span>YouTube: @AfraidOfTheBigBlack</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+</html>
